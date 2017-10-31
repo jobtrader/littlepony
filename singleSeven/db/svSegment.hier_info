@@ -1,0 +1,162 @@
+|counter_debounce
+In_put => debounce_switch:U1.button
+CLR => debounce_switch:U2.button
+clk => debounce_switch:U1.CLK
+clk => debounce_switch:U2.CLK
+Carry <= comb.DB_MAX_OUTPUT_PORT_TYPE
+output2[0] <= seven:U3.output[0]
+output2[1] <= seven:U3.output[1]
+output2[2] <= seven:U3.output[2]
+output2[3] <= seven:U3.output[3]
+output2[4] <= seven:U3.output[4]
+output2[5] <= seven:U3.output[5]
+output2[6] <= seven:U3.output[6]
+output3[0] <= seven:U4.output[0]
+output3[1] <= seven:U4.output[1]
+output3[2] <= seven:U4.output[2]
+output3[3] <= seven:U4.output[3]
+output3[4] <= seven:U4.output[4]
+output3[5] <= seven:U4.output[5]
+output3[6] <= seven:U4.output[6]
+
+
+|counter_debounce|binary_counter:U0
+C_in => C.CLK
+C_in => tmp[0].CLK
+C_in => tmp[1].CLK
+C_in => tmp[2].CLK
+C_in => tmp[3].CLK
+CLR => C.IN1
+CLR => C.ACLR
+CLR => tmp[3].IN1
+C_out <= C.DB_MAX_OUTPUT_PORT_TYPE
+O[0] <= tmp[0].DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= tmp[1].DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= tmp[2].DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= tmp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_debounce|debounce_switch:U1
+CLK => keepResult.CLK
+CLK => count[0].CLK
+CLK => count[1].CLK
+CLK => count[2].CLK
+CLK => count[3].CLK
+CLK => count[4].CLK
+CLK => count[5].CLK
+CLK => count[6].CLK
+CLK => count[7].CLK
+CLK => count[8].CLK
+CLK => count[9].CLK
+CLK => count[10].CLK
+CLK => count[11].CLK
+CLK => count[12].CLK
+CLK => count[13].CLK
+CLK => count[14].CLK
+CLK => count[15].CLK
+CLK => inff[0].CLK
+CLK => inff[1].CLK
+button => inff[0].DATAIN
+result <= keepResult.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_debounce|debounce_switch:U2
+CLK => keepResult.CLK
+CLK => count[0].CLK
+CLK => count[1].CLK
+CLK => count[2].CLK
+CLK => count[3].CLK
+CLK => count[4].CLK
+CLK => count[5].CLK
+CLK => count[6].CLK
+CLK => count[7].CLK
+CLK => count[8].CLK
+CLK => count[9].CLK
+CLK => count[10].CLK
+CLK => count[11].CLK
+CLK => count[12].CLK
+CLK => count[13].CLK
+CLK => count[14].CLK
+CLK => count[15].CLK
+CLK => inff[0].CLK
+CLK => inff[1].CLK
+button => inff[0].DATAIN
+result <= keepResult.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_debounce|seven:U3
+In_fb[0] => Mux0.IN19
+In_fb[0] => Mux1.IN19
+In_fb[0] => Mux2.IN19
+In_fb[0] => Mux3.IN19
+In_fb[0] => Mux4.IN19
+In_fb[0] => Mux5.IN19
+In_fb[0] => Mux6.IN19
+In_fb[1] => Mux0.IN18
+In_fb[1] => Mux1.IN18
+In_fb[1] => Mux2.IN18
+In_fb[1] => Mux3.IN18
+In_fb[1] => Mux4.IN18
+In_fb[1] => Mux5.IN18
+In_fb[1] => Mux6.IN18
+In_fb[2] => Mux0.IN17
+In_fb[2] => Mux1.IN17
+In_fb[2] => Mux2.IN17
+In_fb[2] => Mux3.IN17
+In_fb[2] => Mux4.IN17
+In_fb[2] => Mux5.IN17
+In_fb[2] => Mux6.IN17
+In_fb[3] => Mux0.IN16
+In_fb[3] => Mux1.IN16
+In_fb[3] => Mux2.IN16
+In_fb[3] => Mux3.IN16
+In_fb[3] => Mux4.IN16
+In_fb[3] => Mux5.IN16
+In_fb[3] => Mux6.IN16
+output[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_debounce|seven:U4
+In_fb[0] => Mux0.IN19
+In_fb[0] => Mux1.IN19
+In_fb[0] => Mux2.IN19
+In_fb[0] => Mux3.IN19
+In_fb[0] => Mux4.IN19
+In_fb[0] => Mux5.IN19
+In_fb[0] => Mux6.IN19
+In_fb[1] => Mux0.IN18
+In_fb[1] => Mux1.IN18
+In_fb[1] => Mux2.IN18
+In_fb[1] => Mux3.IN18
+In_fb[1] => Mux4.IN18
+In_fb[1] => Mux5.IN18
+In_fb[1] => Mux6.IN18
+In_fb[2] => Mux0.IN17
+In_fb[2] => Mux1.IN17
+In_fb[2] => Mux2.IN17
+In_fb[2] => Mux3.IN17
+In_fb[2] => Mux4.IN17
+In_fb[2] => Mux5.IN17
+In_fb[2] => Mux6.IN17
+In_fb[3] => Mux0.IN16
+In_fb[3] => Mux1.IN16
+In_fb[3] => Mux2.IN16
+In_fb[3] => Mux3.IN16
+In_fb[3] => Mux4.IN16
+In_fb[3] => Mux5.IN16
+In_fb[3] => Mux6.IN16
+output[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

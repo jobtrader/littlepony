@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.019
+TNS   : -89.491
+
+Type  : Slow 1200mV 85C Model Setup 'debounce_switch:U1|keepResult'
+Slack : -1.620
+TNS   : -13.969
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debounce_switch:U1|keepResult'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'debounce_switch:U1|keepResult'
+Slack : -1.191
+TNS   : -16.560
+
+Type  : Slow 1200mV 85C Model Removal 'debounce_switch:U1|keepResult'
+Slack : 1.137
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -59.506
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce_switch:U1|keepResult'
+Slack : -1.487
+TNS   : -23.792
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.714
+TNS   : -79.929
+
+Type  : Slow 1200mV 0C Model Setup 'debounce_switch:U1|keepResult'
+Slack : -1.466
+TNS   : -12.315
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debounce_switch:U1|keepResult'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'debounce_switch:U1|keepResult'
+Slack : -1.184
+TNS   : -16.286
+
+Type  : Slow 1200mV 0C Model Removal 'debounce_switch:U1|keepResult'
+Slack : 1.173
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -59.506
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce_switch:U1|keepResult'
+Slack : -1.487
+TNS   : -23.792
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.693
+TNS   : -17.538
+
+Type  : Fast 1200mV 0C Model Setup 'debounce_switch:U1|keepResult'
+Slack : -0.118
+TNS   : -0.472
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.021
+TNS   : -0.021
+
+Type  : Fast 1200mV 0C Model Hold 'debounce_switch:U1|keepResult'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'debounce_switch:U1|keepResult'
+Slack : -0.112
+TNS   : -1.120
+
+Type  : Fast 1200mV 0C Model Removal 'debounce_switch:U1|keepResult'
+Slack : 0.603
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -53.487
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce_switch:U1|keepResult'
+Slack : -1.000
+TNS   : -16.000
+
+------------------------------------------------------------
